@@ -12,7 +12,7 @@ const Layout = ({title, children }) => {
             </Head>
             <div className='flex min-h-screen flex-col justify-between'>
                 <header>
-                    <nav className='flex h-12 items-center px-4 justify-between shadow-md bg-black'>
+                    <nav className='flex h-12 items-center px-4 justify-between shadow-md '>
                         <Link href="/">
                             <a href="" className="text-lg font-bold">CupCake</a>
                         </Link>

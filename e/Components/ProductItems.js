@@ -15,7 +15,7 @@ export default function ProductItem({ product, addToCartHandler }) {
           />
         </a>
       </Link>
-      <div className="flex flex-col items-center justify-center p-5">
+      <div className="flex flex-col items-center justify-center p-5 font-bold">
         <Link href={`/product/${product.slug}`}>
           <a>
             <h2 className="text-lg">{product.name}</h2>
@@ -24,11 +24,11 @@ export default function ProductItem({ product, addToCartHandler }) {
         <p className="mb-2">{product.brand}</p>
         <p>${product.price}</p>
         <button
-          className="primary-button"
+          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border w-full font-bold border-blue-500 hover:border-transparent rounded"
           type="button"
           onClick={() => addToCartHandler(product)}
         >
-          Add to cart
+          ADD TO CART
         </button>
       </div>
     </div>
