@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React, { Children } from 'react'
 
-const Layout = ({title, Children }) => {
+const Layout = ({title, children }) => {
     return (
         <>
             <Head>
@@ -12,7 +12,7 @@ const Layout = ({title, Children }) => {
             </Head>
             <div className='flex min-h-screen flex-col justify-between'>
                 <header>
-                    <nav className='flex h-12 items-center px-4 justify-between shadow-md'>
+                    <nav className='flex h-12 items-center px-4 justify-between shadow-md bg-black'>
                         <Link href="/">
                             <a href="" className="text-lg font-bold">CupCake</a>
                         </Link>
@@ -23,7 +23,7 @@ const Layout = ({title, Children }) => {
                     </nav>
                 </header>
             <main className='container m-auto mt-4 px-4'>
-                {Children}
+                {children}
             </main>
             <footer className='flex h-10 justify-center items-center shadow-inner font-bold'>
                 <p>Coppyright K 2022 CupCake</p>
